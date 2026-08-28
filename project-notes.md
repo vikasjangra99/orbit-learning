@@ -6,7 +6,8 @@ Current phase: Phase 0 - experience prototype
 Status: In progress
 Last updated: 2026-08-28
 
-Repository: Independent local Git repository initialized in this directory. GitHub remote: not yet created.
+Repository: https://github.com/vikasjangra99/orbit-learning
+Published site: https://vikasjangra99.github.io/orbit-learning/
 
 ## Goal
 
@@ -51,7 +52,7 @@ Files created: `index.html`, `styles.css`, `app.js`, `interests.js`, `README.md`
 
 Validation: static structure review and browser-oriented interaction wiring; no production claims.
 
-GitHub: not available; repository has not been created.
+GitHub: https://github.com/vikasjangra99/orbit-learning
 
 ### 2026-08-28 - Foundation repository and persistence
 

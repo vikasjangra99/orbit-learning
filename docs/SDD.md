@@ -5,7 +5,8 @@ Version: 0.2.0
 Status: Approved for cloud foundation build
 Owner: Project team
 Last updated: 2026-08-28
-Repository: Independent local Git repository; GitHub remote not yet assigned.
+Repository: https://github.com/vikasjangra99/orbit-learning
+Published site: https://vikasjangra99.github.io/orbit-learning/
 
 ## 1. Purpose
 

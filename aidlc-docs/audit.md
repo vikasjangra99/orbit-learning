@@ -13,6 +13,18 @@ This log records project actions and decisions. Sensitive values such as passwor
 
 ---
 
+## GitHub Repository Published
+**Timestamp**: 2026-08-28T00:00:00Z
+**User Input**: "create it for me. I will give the neessary permission to you, when you ask. you the web thing"
+**AI Response**: Authorized GitHub CLI, created the public repository, pushed the project, and enabled GitHub Pages using the Actions workflow.
+**Context**: Cloud foundation; repository publication.
+**Files**: Repository contents committed as `3634a65`; subsequent cloud documentation updates are pending commit.
+**Decision Logic**: GitHub Pages is free, shareable, and suited to the dependency-free static frontend. Supabase credentials remain outside Git history and will be injected through Actions secrets.
+**GitHub**: Repository `https://github.com/vikasjangra99/orbit-learning`; Pages `https://vikasjangra99.github.io/orbit-learning/`.
+**Remaining Gate**: Supabase project, schema execution, anonymous auth enablement, and `SUPABASE_URL` plus `SUPABASE_ANON_KEY` repository secrets.
+
+---
+
 ## Cloud Foundation Prepared
 **Timestamp**: 2026-08-28T00:00:00Z
 **User Input**: "please. use everything on cloud. no local needed. Use y personal github, host it using the free things. use the free database. use everything free, it should be a real project. I should be able to share the link to anyone, and they should start using it"
