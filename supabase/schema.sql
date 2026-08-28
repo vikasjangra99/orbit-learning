@@ -29,7 +29,7 @@ alter table public.learning_attempts enable row level security;
 create policy "learners can read their profile" on public.learner_profiles for select using (auth.uid() = id);
 create policy "learners can create their profile" on public.learner_profiles for insert with check (auth.uid() = id);
 create policy "learners can update their profile" on public.learner_profiles for update using (auth.uid() = id) with check (auth.uid() = id);
-delete policy if exists "learners can delete their profile" on public.learner_profiles;
+drop policy if exists "learners can delete their profile" on public.learner_profiles;
 create policy "learners can delete their profile" on public.learner_profiles for delete using (auth.uid() = id);
 
 create policy "learners can read their attempts" on public.learning_attempts for select using (auth.uid() = learner_id);
