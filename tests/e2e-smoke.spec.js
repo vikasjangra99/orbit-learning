@@ -21,3 +21,9 @@ test('account form validates before sending a request', async ({ page }) => {
   await page.locator('#authSubmit').click();
   await expect(page.getByLabel('EMAIL')).toHaveAttribute('type', 'email');
 });
+
+test('password recovery requires an email address', async ({ page }) => {
+  await page.goto(publicUrl, { waitUntil: 'networkidle' });
+  await page.getByRole('button', { name: 'Forgot password?' }).click();
+  await expect(page.getByRole('status')).toContainText('Enter your email first.');
+});
