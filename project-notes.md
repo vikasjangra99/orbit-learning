@@ -27,6 +27,7 @@ Explore the touch and feel of a personal adaptive learning web app for multiple 
 - Interest selector for each learner, with multi-select preferences and a filtered learning library.
 - Independent Git repository established so project history is isolated from the parent user directory.
 - Real browser persistence added with IndexedDB learner and attempt stores.
+- Cloud QA test plan created with deployment, application, RLS, privacy, accessibility, performance, and recovery gates.
 
 ## Why it was made
 
@@ -58,7 +59,7 @@ GitHub: https://github.com/vikasjangra99/orbit-learning
 
 Configured GitHub Pages and Supabase Actions secrets. Published site: https://vikasjangra99.github.io/orbit-learning/.
 
-Validation: GitHub Actions deployment succeeded for the configured cloud commit; live page fetch returned the Orbit welcome page and dashboard content. Supabase schema execution and anonymous-auth enablement remain account-side setup checks.
+Validation: GitHub Actions deployment succeeded for the configured cloud commit; live page fetch returned the Orbit welcome page and dashboard content. Supabase schema execution and anonymous-auth enablement remain account-side setup checks. The QA plan contains 83 unique test IDs.
 
 ### 2026-08-28 - Foundation repository and persistence
 
