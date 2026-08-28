@@ -5,7 +5,7 @@
   "description": "Cloud-ready adaptive learning web application foundation",
   "scripts": {
     "test:e2e": "playwright test tests/e2e-smoke.spec.js",
-    "check:js": "node --check app.js && node --check interests.js && node --check storage.js && node --check cloud-client.js && node --check onboarding.js && node --check persistence-bridge.js"
+    "check:js": "node --check app.js && node --check interests.js && node --check cloud-client.js && node --check onboarding.js && node --check persistence-bridge.js && node --check auth.js && node --check auth-runtime.js"
   },
   "devDependencies": {
     "@playwright/test": "1.62.1"

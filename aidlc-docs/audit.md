@@ -68,6 +68,18 @@ This log records project actions and decisions. Sensitive values such as passwor
 
 ---
 
+## Cloud-Only Account Boundary
+**Timestamp**: 2026-08-28T00:00:00Z
+**User Input**: "and why are we still referring to the local data? everything is cloud. the project is cloud. where the model trained. where are the model. I cannot go the homepage? if i share that link to another person, he cannot go the first time page. there is no email account assocaie? ther eis not gmail integration or any email integration. security sucks. what have you amde?"
+**AI Response**: Replaced anonymous/local entry assumptions with an authenticated cloud landing page, email/password account flow, Google OAuth option, sign-out back to the root landing page, and Supabase-user-scoped persistence. Removed IndexedDB from the active runtime and removed generated learner IDs from the persistence path.
+**Context**: Corrective cloud architecture implementation.
+**Files**: `auth.css`, `auth.js`, `auth-runtime.js`, `cloud-client.js`, `onboarding.js`, `persistence-bridge.js`, `index.html`, `package.json`, `docs/SDD.md`, `docs/architecture.md`, `docs/cloud-deployment.md`, `docs/qa-test-plan.md`, `aidlc-docs/aidlc-state.md`.
+**Decision Logic**: A public app cannot safely expose dashboard data before authentication. Supabase Auth now owns identity; Postgres RLS owns data isolation; local browser storage is not an application data path.
+**Validation**: Post-edit JavaScript syntax validation passed locally. Live end-to-end auth tests require deployment of this commit and a configured Supabase email/OAuth provider.
+**GitHub**: Pending publication; repository `https://github.com/vikasjangra99/orbit-learning`.
+
+---
+
 ## GitHub Repository Published
 **Timestamp**: 2026-08-28T00:00:00Z
 **User Input**: "create it for me. I will give the neessary permission to you, when you ask. you the web thing"

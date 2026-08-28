@@ -37,7 +37,7 @@ A release is blocked when any of these fail:
 - R-003 GitHub Actions completes successfully for the intended commit.
 - R-004 The deployed URL serves the intended commit's artifact.
 - R-005 Supabase schema is applied without errors.
-- R-006 Anonymous authentication or the chosen sign-in path works.
+- R-006 The configured email/OAuth sign-in path works.
 - R-007 RLS blocks cross-user reads and writes.
 - R-008 A learner can onboard, practice, refresh, and see persisted state.
 - R-009 No secret or service-role key appears in source, artifacts, logs, or browser code.
@@ -103,7 +103,7 @@ Run these with two separate test identities and inspect the database after each 
 |---|---|---|---|
 | DB-001 | Schema creation | Run `supabase/schema.sql` in the project. | Tables, columns, constraints, indexes, and policies are created without error. |
 | DB-002 | Schema repeatability | Run the schema a second time. | No destructive reset and no duplicate-object failure. |
-| DB-003 | Auth availability | Create a fresh browser identity and complete onboarding. | Auth session is created through the configured provider. |
+| DB-003 | Auth availability | Create a fresh test account and sign in. | Auth session is created through the configured provider. |
 | DB-004 | Own profile insert | Complete setup as learner A. | Exactly one profile row exists for A; display name and preferences are correct. |
 | DB-005 | Own profile read | Reload as learner A. | A can read only A's profile. |
 | DB-006 | Own profile update | Change A's profile preference. | Update succeeds and updated timestamp changes. |
@@ -163,7 +163,7 @@ Run these with two separate test identities and inspect the database after each 
 | PERF-001 | Cold load | Load in a clean browser with cache disabled. | First useful content appears within the agreed budget. |
 | PERF-002 | Offline shell | Load once, then disable network and refresh. | Behavior matches the declared offline capability; no false cloud-save claim. |
 | PERF-003 | Slow network | Throttle to slow 3G and complete onboarding. | Loading and failure states are usable; controls do not duplicate. |
-| PERF-004 | Storage failure | Block IndexedDB or cloud requests. | App shows a clear persistence-unavailable state. |
+| PERF-004 | Persistence failure | Block cloud requests. | App shows a clear persistence-unavailable state. |
 | PERF-005 | Repeated sessions | Run 50 synthetic attempts for one test identity. | No UI degradation, duplicate listeners, or runaway records. |
 | PERF-006 | Concurrent sessions | Use the same identity in two tabs and submit answers. | Conflict behavior is deterministic and documented. |
 | PERF-007 | Browser compatibility | Run smoke flow in supported browsers. | No critical functionality differs unexpectedly. |

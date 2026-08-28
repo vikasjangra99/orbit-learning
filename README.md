@@ -1,6 +1,6 @@
 # Orbit Learning
 
-A dependency-free local-first foundation for the adaptive personal learning system. It keeps the visual prototype experience while adding real browser persistence for learner records and practice attempts.
+A cloud-first foundation for the adaptive personal learning system. It keeps the visual experience while using Supabase Auth and Postgres for learner records and practice attempts.
 
 ## Run
 
@@ -18,9 +18,9 @@ Open `index.html` in a browser. No installation or server is required.
 
 ## Explicitly mocked
 
-The foundation does not include authentication, cloud synchronization, external AI calls, or production security controls. It uses IndexedDB as a real local database. The visible recommendations and progress values remain illustrative until the adaptive domain engine is implemented.
+The foundation requires authentication and cloud connectivity. It does not include external AI calls, production security hardening, or a trained adaptive model yet. The visible recommendations and progress values remain illustrative until the adaptive domain engine is implemented.
 
-The first-use setup is stored locally so a returning visitor can resume the learning space. Use the browser's site-data controls to replay the first-use journey during this foundation stage. This is local persistence, not production account storage.
+The first-use setup is stored in the authenticated Supabase account. Sign out from Profile to return to the landing page; sign in again to resume the same cloud profile.
 
 ## Project record
 

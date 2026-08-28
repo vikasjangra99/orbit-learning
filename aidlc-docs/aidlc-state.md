@@ -23,7 +23,7 @@ Last updated: 2026-08-28
 
 ## Current Scope
 
-Implement the cloud foundation release described in `docs/SDD.md`: GitHub Pages hosting, Supabase Auth/Postgres persistence, separated profiles through row-level security, content and attempt records, deterministic progress behavior, and deployment validation. The visual prototype remains the presentation reference.
+Implement the cloud application foundation described in `docs/SDD.md`: GitHub Pages hosting, Supabase email/OAuth authentication, Supabase Postgres persistence, separated profiles through row-level security, content and attempt records, deterministic progress behavior, and deployment validation. The landing page must be the unauthenticated entry point; no learner data is shown before sign-in.
 
 ## Repository Provenance
 

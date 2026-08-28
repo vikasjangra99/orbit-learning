@@ -4,7 +4,7 @@
 
 - Frontend: GitHub Pages.
 - CI/CD: GitHub Actions.
-- Authentication: Supabase anonymous authentication for the first public pilot.
+- Authentication: Supabase email/password and Google OAuth.
 - Database: Supabase free Postgres.
 - Database security: Supabase row-level security policies in `supabase/schema.sql`.
 - AI provider: not enabled in this release.
@@ -14,7 +14,7 @@
 These actions require the project owner's accounts and cannot be performed without their authorization:
 
 1. Create a Supabase project on the free tier.
-2. Enable anonymous sign-ins in Supabase Auth.
+2. Configure email/password sign-in and Google OAuth in Supabase Auth.
 3. Run `supabase/schema.sql` in the Supabase SQL Editor.
 4. Copy the Supabase project URL and anon public key.
 5. Create a personal GitHub repository and add this project as its remote. Completed: `https://github.com/vikasjangra99/orbit-learning`.
@@ -29,4 +29,4 @@ Never add a service-role key to frontend code, repository files, or Actions logs
 GitHub repository: `https://github.com/vikasjangra99/orbit-learning`
 GitHub Pages URL: `https://vikasjangra99.github.io/orbit-learning/`
 
-The project still has no Supabase project configuration. The local `cloud-config.js` is intentionally empty. The deployment workflow will inject secrets into the published artifact; it will not publish the placeholder values from `cloud-config.example.js`.
+The GitHub Actions secrets are configured. The local `cloud-config.js` remains intentionally empty; the deployment workflow injects the values into the published artifact and never publishes the placeholder values from `cloud-config.example.js`.

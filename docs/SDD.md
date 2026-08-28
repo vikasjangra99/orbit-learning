@@ -30,7 +30,7 @@ Included:
 - Responsive web experience.
 
 Excluded from this release:
-- Production identity verification and account recovery beyond Supabase anonymous auth.
+- Account recovery, verified email enforcement, and production identity hardening are deployment gates.
 - External AI provider calls.
 - Production-grade account security.
 - Payments, classrooms, social features, and analytics.
@@ -44,8 +44,11 @@ A learner profile describes goals and context. It must not permanently label abi
 
 ## 4. Product Requirements
 
+### FR-AUTH-001 Account entry
+A new visitor shall see the public landing page and be able to create an email account, sign in with email/password, or use configured Google OAuth. Learner data shall not be shown before authentication.
+
 ### FR-ONB-001 First-use setup
-A new visitor shall see a welcome page and be able to create a learner space by entering a name, choosing one or more domains, and selecting a learning intention.
+An authenticated visitor without a learner profile shall see a welcome page and be able to create a learner space by entering a name, choosing one or more domains, and selecting a learning intention.
 
 Acceptance criteria:
 - Setup cannot continue without a name, at least one domain, and one goal.
@@ -90,7 +93,7 @@ The core learning loop shall operate when no AI provider is configured. No LLM s
 
 ## 6. Architecture
 
-The cloud foundation uses a static browser application hosted by GitHub Pages, Supabase anonymous authentication, and Supabase Postgres. The boundaries are:
+The cloud foundation uses a static browser application hosted by GitHub Pages, Supabase email/OAuth authentication, and Supabase Postgres. The boundaries are:
 
 - Presentation: HTML/CSS and interaction controllers.
 - Domain: learner profiles, content, attempts, mastery, scheduling, and recommendation rules.
@@ -108,7 +111,7 @@ Attempt: id, learnerId, itemId, itemVersion, correctness, confidence, hintUsed, 
 
 Skill state: learnerId, skillId, masteryEstimate, uncertainty, lastAttemptAt, nextReviewAt, modelVersion.
 
-All timestamps are ISO 8601 UTC strings. IDs are generated locally and are not treated as authentication credentials.
+All timestamps are ISO 8601 UTC strings. User IDs are issued by Supabase Auth and are not accepted from client-controlled learner input.
 
 ## 8. AI And Safety Boundaries
 
