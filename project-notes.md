@@ -30,6 +30,8 @@ Explore the touch and feel of a personal adaptive learning web app for multiple 
 - Cloud QA test plan created with deployment, application, RLS, privacy, accessibility, performance, and recovery gates.
 - Live Playwright smoke coverage added for onboarding, first practice, feedback, and primary navigation.
 - Cloud account landing flow added with email/password, Google OAuth option, session gating, and sign-out to the landing page.
+- Authenticated dashboard now loads the signed-in Supabase profile and derives visible subjects/signals from saved cloud data.
+- Top-right notifications and help controls now open dismissible utility panels.
 
 ## Why it was made
 
@@ -40,6 +42,8 @@ The first risk is not model quality. It is whether people understand the product
 Adaptive mastery estimation, spaced repetition, AI APIs, analytics, and production security review are still pending. GitHub Pages deployment and Supabase cloud persistence are configured for the foundation.
 
 Model status: no trained model exists yet. Current recommendation UI is explicitly placeholder behavior; see `docs/ai-model.md`.
+
+Current dynamic-data status: profile domains are cloud-driven; mastery signals are calculated from stored attempts. Content and recommendation policy are still foundation-level.
 
 ## Next step
 

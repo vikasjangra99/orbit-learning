@@ -67,6 +67,9 @@ Acceptance criteria:
 - Export and import preserve profile boundaries.
 - Deleting one profile does not delete another profile.
 
+### FR-PROFILE-002 Cloud-driven dashboard
+After authentication, the dashboard shall load the signed-in user's profile from Supabase. It shall render the selected domains and computed attempt signals instead of seeded learner values.
+
 ### FR-CONTENT-001 Content model
 Each learning item shall have a stable ID, content version, domain, skill, difficulty, answer specification, explanation, and provenance status.
 
@@ -80,6 +83,9 @@ Each recommendation shall include a short reason such as due review, recent erro
 
 ### FR-DATA-001 Cloud data control
 The learner shall be able to export and delete cloud data. Row-level security shall prevent one authenticated user from reading or writing another user's learner profile or attempts.
+
+### FR-UI-001 Utility actions
+The notification and help controls shall open usable, dismissible panels. The account control shall expose sign-out and return the user to the public landing page.
 
 ### FR-AI-001 AI boundary
 The core learning loop shall operate when no AI provider is configured. No LLM shall silently determine mastery or progression.

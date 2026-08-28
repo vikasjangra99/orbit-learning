@@ -92,6 +92,18 @@ This log records project actions and decisions. Sensitive values such as passwor
 
 ---
 
+## Dynamic Cloud Profile Correction
+**Timestamp**: 2026-08-28T00:00:00Z
+**User Input**: "good. worked. now, the app inside it is not good. so, there these buttons do no work, on the top right corner. first. second, the data is alredy filled in the portal. I see the skill signals having some values. also I selected the law and mathematics, but I dont see the smae thigs when I get in the app. so, the app has the data, already. they are all manually entered feilds. they are not dynamic wrt what we enter"
+**AI Response**: Added live Supabase profile and attempt reads, derived dashboard subjects from saved domains, calculated initial skill signals from cloud attempts, removed active local runtime references, and implemented dismissible notification/help panels.
+**Context**: Functional cloud-data correction.
+**Decision Logic**: Hard-coded learner objects were the controlling source of the mismatch. The authenticated profile and attempts must be the source of truth after login.
+**Files**: `cloud-client.js`, `auth-runtime.js`, `live-profile.js`, `ui-actions.js`, `index.html`, `docs/SDD.md`, `docs/qa-test-plan.md`, `project-notes.md`.
+**Validation**: All changed JavaScript files pass syntax checks. Live deployment and authenticated profile-data tests are pending publication and test-account execution.
+**GitHub**: Pending publication; repository `https://github.com/vikasjangra99/orbit-learning`.
+
+---
+
 ## GitHub Repository Published
 **Timestamp**: 2026-08-28T00:00:00Z
 **User Input**: "create it for me. I will give the neessary permission to you, when you ask. you the web thing"

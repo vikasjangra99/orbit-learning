@@ -94,6 +94,11 @@ A release is blocked when any of these fail:
 | E2E-016 | Session completion | Complete all questions. | Session closes or transitions cleanly; daily progress updates once. |
 | E2E-017 | Refresh after practice | Complete an attempt, refresh, and return to Progress. | Saved attempt and updated progress remain available. |
 | E2E-018 | Error recovery | Disconnect network during a write, then reconnect and retry. | User receives a clear state; no duplicate or silently lost attempt is created. |
+| E2E-019 | Cloud profile rendering | Sign in as a profile with Law and Mathematics selected. | Dashboard and Learn show Law and Mathematics; seeded demo subjects do not replace account data. |
+| E2E-020 | Real progress signal | Complete an attempt, refresh, and inspect Progress. | Signal is calculated from saved attempts and is not a hard-coded demo percentage. |
+| E2E-021 | Notification action | Click the top-right notification control and close its panel. | A notification panel opens and closes without navigation or console errors. |
+| E2E-022 | Help action | Click the top-right help control and close its panel. | A help panel opens with useful product guidance and closes cleanly. |
+| E2E-023 | Sign-out return | Sign out from Profile. | Session ends and the public account landing page appears. |
 
 ## 8. Supabase Database And RLS Tests
 
