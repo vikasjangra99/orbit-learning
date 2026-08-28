@@ -23,6 +23,8 @@
 - [ ] Set Site URL to `https://vikasjangra99.github.io/orbit-learning/`.
 - [ ] Add the same URL to Redirect URLs.
 - [ ] Confirm password reset redirect uses the Pages URL.
+- [ ] Run `supabase/knowledge-base.sql` after the data reset.
+- [ ] Confirm approved Mathematics and Law items are visible through the application.
 
 ### Google Cloud
 

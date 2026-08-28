@@ -73,6 +73,8 @@ After authentication, the dashboard shall load the signed-in user's profile from
 ### FR-CONTENT-001 Content model
 Each learning item shall have a stable ID, content version, domain, skill, difficulty, answer specification, explanation, and provenance status.
 
+The foundation knowledge base is stored in Supabase `learning_items`. Only items with `review_status = 'approved'` are readable by the application. Starter content covers Mathematics and Indian Contract Law, uses original wording, and records source/provenance metadata.
+
 ### FR-ADAPT-001 Adaptive practice
 After an attempt, the system shall update the learner's skill state and select a next activity using performance, confidence, difficulty, prerequisites, and review state.
 
@@ -80,6 +82,8 @@ The first implementation may use deterministic rules. A future mastery model may
 
 ### FR-ADAPT-002 Explainable recommendations
 Each recommendation shall include a short reason such as due review, recent error, weak prerequisite, or ready for challenge.
+
+The first cloud recommendation selects an approved item from one of the learner's saved domains and records the selected item ID and version with the attempt.
 
 ### FR-DATA-001 Cloud data control
 The learner shall be able to export and delete cloud data. Row-level security shall prevent one authenticated user from reading or writing another user's learner profile or attempts.

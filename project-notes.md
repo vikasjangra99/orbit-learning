@@ -33,6 +33,7 @@ Explore the touch and feel of a personal adaptive learning web app for multiple 
 - Authenticated dashboard now loads the signed-in Supabase profile and derives visible subjects/signals from saved cloud data.
 - Top-right notifications and help controls now open dismissible utility panels.
 - Removed all seeded learner names, demo metrics, streaks, and hard-coded progress from the active runtime and initial HTML state.
+- Added a versioned Supabase knowledge base with approved Mathematics and Indian Contract Law starter items, source/provenance, misconceptions, hints, and review status.
 
 ## Why it was made
 
@@ -47,6 +48,8 @@ Model status: no trained model exists yet. Current recommendation UI is explicit
 Current dynamic-data status: profile domains are cloud-driven; mastery signals are calculated from stored attempts. Content and recommendation policy are still foundation-level.
 
 Reset status: no demo learner records or fabricated dashboard metrics remain in the repository. Supabase account data is user-owned cloud data and is not deleted by source cleanup.
+
+Knowledge-base status: the application now queries approved cloud items for the signed-in learner's selected domains. The SQL seed must be executed in Supabase before Start can load the new content.
 
 Cache note: Supabase Auth may keep a session token in browser site storage for reload continuity. That is not learner data. Clearing it signs out the browser; it does not delete the cloud account or profile.
 

@@ -13,6 +13,18 @@ This log records project actions and decisions. Sensitive values such as passwor
 
 ---
 
+## Cloud Knowledge Base Implemented
+**Timestamp**: 2026-08-28T00:00:00Z
+**User Input**: "ok. don't give me recommendations, but give me the solutions. and you have to get the data for the tools as well. dont ask me. get the content as well. for learning."
+**AI Response**: Added `supabase/knowledge-base.sql` with a versioned `learning_items` table and approved starter content for Mathematics and Indian Contract Law. Added cloud querying and recommendation wiring so Start loads approved items from the learner's saved domains and records item provenance.
+**Context**: Construction; content and recommendation foundation.
+**Decision Logic**: Removed hard-coded placeholder questions. Legal items use original wording and official India Code homepage provenance; no stale deep URL is claimed. Content is visible only when marked approved.
+**Files**: `supabase/knowledge-base.sql`, `cloud-client.js`, `knowledge-engine.js`, `persistence-bridge.js`, `app.js`, `index.html`, `docs/SDD.md`, `docs/production-readiness.md`, `project-notes.md`.
+**Validation**: JavaScript syntax checks passed; schema and idempotent seed conflict handling verified. Supabase execution and live content retrieval remain pending.
+**GitHub**: Pending publication; repository `https://github.com/vikasjangra99/orbit-learning`.
+
+---
+
 ## Cloud Deployment Verified
 **Timestamp**: 2026-08-28T00:00:00Z
 **User Input**: "done. continue ahead"
