@@ -80,6 +80,18 @@ This log records project actions and decisions. Sensitive values such as passwor
 
 ---
 
+## Cloud Account QA Passed
+**Timestamp**: 2026-08-28T00:00:00Z
+**User Input**: "and why are we still referring to the local data? everything is cloud. the project is cloud. where the model trained. where are the model. I cannot go the homepage? if i share that link to another person, he cannot go the first time page. there is no email account assocaie? ther eis not gmail integration or any email integration. security sucks. what have you amde?"
+**AI Response**: Deployed the authenticated cloud landing page and ran live end-user checks for unauthenticated entry, email/password and Google OAuth controls, and client-side account form validation. Added explicit model provenance documentation stating that no trained model exists yet.
+**Context**: Cloud-only corrective release and end-user QA.
+**Files**: `tests/e2e-smoke.spec.js`, `docs/ai-model.md`, `docs/SDD.md`, `docs/cloud-deployment.md`, `project-notes.md`.
+**Validation**: Live Playwright account-entry suite passed 2/2 in 4.8 seconds; JavaScript checks passed; VS Code diagnostics previously reported no errors.
+**Decision Logic**: The public root must show an account landing page. Learner data must not render without a Supabase session. A model is not claimed until an artifact, evaluation, and provenance record exist.
+**GitHub**: Changes pending publication; repository `https://github.com/vikasjangra99/orbit-learning`.
+
+---
+
 ## GitHub Repository Published
 **Timestamp**: 2026-08-28T00:00:00Z
 **User Input**: "create it for me. I will give the neessary permission to you, when you ask. you the web thing"

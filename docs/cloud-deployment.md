@@ -14,7 +14,7 @@
 These actions require the project owner's accounts and cannot be performed without their authorization:
 
 1. Create a Supabase project on the free tier.
-2. Configure email/password sign-in and Google OAuth in Supabase Auth.
+2. Configure email/password sign-in and Google OAuth in Supabase Auth. Add the deployed Pages URL as an allowed redirect URL.
 3. Run `supabase/schema.sql` in the Supabase SQL Editor.
 4. Copy the Supabase project URL and anon public key.
 5. Create a personal GitHub repository and add this project as its remote. Completed: `https://github.com/vikasjangra99/orbit-learning`.

@@ -14,6 +14,8 @@ Orbit Learning is a personal learning web application for multiple independent l
 
 The system is intentionally more than a generative AI chat interface. Generative AI may explain, coach, and draft reviewed content. The learning engine remains responsible for mastery estimation, activity selection, scheduling, and evaluation.
 
+The current release contains no trained model. Its visible recommendations are foundation placeholders; model design, training, evaluation, and registration are tracked in `docs/ai-model.md`.
+
 ## 2. Current Release
 
 Release 1 is the cloud foundation build. It converts the experience prototype into a shareable static web application backed by Supabase Auth and Postgres with row-level security.
@@ -133,7 +135,11 @@ Every meaningful change must identify the relevant requirement ID, record why th
 
 Product decisions live in `decisions.md`; the readable project overview lives in `project-notes.md`; detailed workflow activity lives in `aidlc-docs/audit.md`; exact code history lives in Git.
 
-## 11. Definition Of Done For Foundation Build
+## 11. AI Model Provenance
+
+No model artifact, training job, or training dataset is claimed for this release. A future model must have a version, artifact hash, evaluation report, baseline comparison, and approval record before affecting learner recommendations.
+
+## 12. Definition Of Done For Cloud Foundation Build
 
 - A new visitor can complete onboarding.
 - A returning visitor can resume without losing state.

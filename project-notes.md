@@ -29,6 +29,7 @@ Explore the touch and feel of a personal adaptive learning web app for multiple 
 - Real browser persistence added with IndexedDB learner and attempt stores.
 - Cloud QA test plan created with deployment, application, RLS, privacy, accessibility, performance, and recovery gates.
 - Live Playwright smoke coverage added for onboarding, first practice, feedback, and primary navigation.
+- Cloud account landing flow added with email/password, Google OAuth option, session gating, and sign-out to the landing page.
 
 ## Why it was made
 
@@ -37,6 +38,8 @@ The first risk is not model quality. It is whether people understand the product
 ## What is not real yet
 
 Adaptive mastery estimation, spaced repetition, AI APIs, analytics, and production security review are still pending. GitHub Pages deployment and Supabase cloud persistence are configured for the foundation.
+
+Model status: no trained model exists yet. Current recommendation UI is explicitly placeholder behavior; see `docs/ai-model.md`.
 
 ## Next step
 
