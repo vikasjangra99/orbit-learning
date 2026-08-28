@@ -32,6 +32,7 @@ Explore the touch and feel of a personal adaptive learning web app for multiple 
 - Cloud account landing flow added with email/password, Google OAuth option, session gating, and sign-out to the landing page.
 - Authenticated dashboard now loads the signed-in Supabase profile and derives visible subjects/signals from saved cloud data.
 - Top-right notifications and help controls now open dismissible utility panels.
+- Removed all seeded learner names, demo metrics, streaks, and hard-coded progress from the active runtime and initial HTML state.
 
 ## Why it was made
 
@@ -44,6 +45,8 @@ Adaptive mastery estimation, spaced repetition, AI APIs, analytics, and producti
 Model status: no trained model exists yet. Current recommendation UI is explicitly placeholder behavior; see `docs/ai-model.md`.
 
 Current dynamic-data status: profile domains are cloud-driven; mastery signals are calculated from stored attempts. Content and recommendation policy are still foundation-level.
+
+Reset status: no demo learner records or fabricated dashboard metrics remain in the repository. Supabase account data is user-owned cloud data and is not deleted by source cleanup.
 
 ## Next step
 

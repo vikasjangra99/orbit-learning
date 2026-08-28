@@ -80,6 +80,17 @@ This log records project actions and decisions. Sensitive values such as passwor
 
 ---
 
+## Seeded Data Removed
+**Timestamp**: 2026-08-28T00:00:00Z
+**User Input**: "none of them are working. where are you storing the cache, like when I relaoded after your changes, my prevous logged in sessoin got out. and now I again see the some exisitng values. please delete all the exisitng values you have, anika sharma, ..... and all the metrics you have."
+**AI Response**: Removed seeded learner profiles and fake metrics from the active JavaScript and HTML runtime, removed the local database path from the cloud app, and changed initial progress to an empty cloud state. Added dynamic profile loading from Supabase and documented that account-owned Supabase rows require a separate controlled deletion.
+**Context**: Cloud data integrity and cache/reset correction.
+**Files**: `app.js`, `index.html`, `live-profile.js`, `docs/qa-test-plan.md`, `project-notes.md`.
+**Validation**: Repository search found no seeded names, fake metric values, localStorage, IndexedDB, or OrbitStore references in active runtime/docs; JavaScript checks passed.
+**GitHub**: Pending publication; repository `https://github.com/vikasjangra99/orbit-learning`.
+
+---
+
 ## Cloud Account QA Passed
 **Timestamp**: 2026-08-28T00:00:00Z
 **User Input**: "and why are we still referring to the local data? everything is cloud. the project is cloud. where the model trained. where are the model. I cannot go the homepage? if i share that link to another person, he cannot go the first time page. there is no email account assocaie? ther eis not gmail integration or any email integration. security sucks. what have you amde?"

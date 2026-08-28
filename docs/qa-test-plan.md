@@ -99,6 +99,8 @@ A release is blocked when any of these fail:
 | E2E-021 | Notification action | Click the top-right notification control and close its panel. | A notification panel opens and closes without navigation or console errors. |
 | E2E-022 | Help action | Click the top-right help control and close its panel. | A help panel opens with useful product guidance and closes cleanly. |
 | E2E-023 | Sign-out return | Sign out from Profile. | Session ends and the public account landing page appears. |
+| E2E-024 | Empty authenticated state | Sign in with an account that has no profile or attempts. | No seeded name, subject, streak, or metric appears; setup is offered. |
+| E2E-025 | Saved domain rendering | Sign in with a profile containing Law and Mathematics. | Only the saved domains render in the learner map and library. |
 
 ## 8. Supabase Database And RLS Tests
 
