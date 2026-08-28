@@ -46,6 +46,17 @@ This log records project actions and decisions. Sensitive values such as passwor
 
 ---
 
+## End-User QA Executed
+**Timestamp**: 2026-08-28T00:00:00Z
+**User Input**: "I want you to test that as a end user is testing. he should be able to see it through and thorugh"
+**AI Response**: Added Playwright live smoke coverage, ran it against the public Pages URL, fixed the study modal accessibility role found during the first run, and reran the suite.
+**Context**: QA execution against deployed cloud foundation.
+**Files**: `tests/e2e-smoke.spec.js`, `index.html`, `docs/qa-test-plan.md`, `project-notes.md`.
+**Validation**: Final live suite result: 2 passed in 6.3 seconds. All JavaScript syntax checks passed; VS Code diagnostics report no errors. An unrelated user-level npm audit reports vulnerabilities in packages outside this repository's tracked files.
+**GitHub**: QA changes pending publication; repository `https://github.com/vikasjangra99/orbit-learning`.
+
+---
+
 ## GitHub Repository Published
 **Timestamp**: 2026-08-28T00:00:00Z
 **User Input**: "create it for me. I will give the neessary permission to you, when you ask. you the web thing"

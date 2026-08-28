@@ -201,6 +201,8 @@ Verified on 2026-08-28:
 - All JavaScript files pass syntax checks.
 - VS Code diagnostics report no errors.
 - Deployed cloud configuration contains the configured Supabase project URL.
+- Playwright live smoke test passed: a new learner completed onboarding, entered the learning space, started practice, answered the first question, received feedback, and navigated Today, Learn, Progress, and Profile.
+- Study-session container now exposes `role="dialog"` with an accessible label.
 
 Not independently verified from the public URL:
 
