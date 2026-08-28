@@ -80,6 +80,18 @@ This log records project actions and decisions. Sensitive values such as passwor
 
 ---
 
+## Final Seeded Data Cleanup
+**Timestamp**: 2026-08-28T00:00:00Z
+**User Input**: "none of them are working. where are you storing the cache, like when I relaoded after your changes, my prevous logged in sessoin got out. and now I again see the some exisitng values. please delete all the exisitng values you have, anika sharma, ..... and all the metrics you have."
+**AI Response**: Removed the final static recommendation and all seeded learner identity/metric defaults from the active runtime. Removed obsolete local demo launchers, updated the standard JavaScript check to include all active modules, and documented Supabase Auth session storage separately from cloud learner data.
+**Context**: Final cloud-only data cleanup.
+**Files**: `app.js`, `index.html`, `live-profile.js`, `README.md`, `package.json`, `docs/architecture.md`, `docs/production-readiness.md`, `project-notes.md`.
+**Validation**: Repository search found no seeded names, fake dashboard metrics, localStorage, IndexedDB, or OrbitStore references in active runtime. `npm run check:js` passed. Cloud commit `f248788` pushed to `main`.
+**Data Safety**: No Supabase rows were bulk-deleted because those are account-owned records and a source cleanup must not destroy real learner data. Explicit account deletion remains a separate authenticated operation.
+**GitHub**: Repository `https://github.com/vikasjangra99/orbit-learning`; commit `f248788`.
+
+---
+
 ## Seeded Data Removed
 **Timestamp**: 2026-08-28T00:00:00Z
 **User Input**: "none of them are working. where are you storing the cache, like when I relaoded after your changes, my prevous logged in sessoin got out. and now I again see the some exisitng values. please delete all the exisitng values you have, anika sharma, ..... and all the metrics you have."
