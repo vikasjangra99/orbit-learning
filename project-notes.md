@@ -1,9 +1,9 @@
-# Orbit Learning Prototype
+# Orbit Learning
 
 ## Status
 
-Current phase: Phase 0 - experience prototype
-Status: In progress
+Current phase: Cloud foundation build
+Status: Deployed for pilot setup
 Last updated: 2026-08-28
 
 Repository: https://github.com/vikasjangra99/orbit-learning
@@ -30,11 +30,11 @@ Explore the touch and feel of a personal adaptive learning web app for multiple 
 
 ## Why it was made
 
-The first risk is not model quality. It is whether people understand the product, want to return to it, and feel that personalization is useful. This prototype lets a small family pilot react to the experience before real content, storage, and AI infrastructure are selected.
+The first risk is not model quality. It is whether people understand the product, want to return to it, and feel that personalization is useful. The cloud foundation now gives a small family pilot a shareable URL while the learning engine remains under development.
 
 ## What is not real yet
 
-Authentication, cloud synchronization, adaptive mastery estimation, spaced repetition, AI APIs, security implementation, analytics, and production deployment are intentionally excluded from this phase. Browser IndexedDB persistence is now included.
+Adaptive mastery estimation, spaced repetition, AI APIs, analytics, and production security review are still pending. GitHub Pages deployment and Supabase cloud persistence are configured for the foundation.
 
 ## Next step
 
@@ -53,6 +53,12 @@ Files created: `index.html`, `styles.css`, `app.js`, `interests.js`, `README.md`
 Validation: static structure review and browser-oriented interaction wiring; no production claims.
 
 GitHub: https://github.com/vikasjangra99/orbit-learning
+
+### 2026-08-28 - Cloud deployment
+
+Configured GitHub Pages and Supabase Actions secrets. Published site: https://vikasjangra99.github.io/orbit-learning/.
+
+Validation: GitHub Actions deployment succeeded for the configured cloud commit; live page fetch returned the Orbit welcome page and dashboard content. Supabase schema execution and anonymous-auth enablement remain account-side setup checks.
 
 ### 2026-08-28 - Foundation repository and persistence
 

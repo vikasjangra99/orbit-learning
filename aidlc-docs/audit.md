@@ -13,6 +13,18 @@ This log records project actions and decisions. Sensitive values such as passwor
 
 ---
 
+## Cloud Deployment Verified
+**Timestamp**: 2026-08-28T00:00:00Z
+**User Input**: "done. continue ahead"
+**AI Response**: Verified GitHub Actions secrets by name, triggered deployment, corrected a PostgreSQL migration syntax defect, pushed commit `af2bd7f`, and verified the deployed site content.
+**Context**: Construction; cloud deployment verification.
+**Files**: `supabase/schema.sql`, `project-notes.md`.
+**Validation**: GitHub Actions run `33195477094` completed successfully; latest schema-fix run `33195512735` was queued at verification time; live URL fetch returned the Orbit welcome page and dashboard content.
+**GitHub**: Repository `https://github.com/vikasjangra99/orbit-learning`; Pages `https://vikasjangra99.github.io/orbit-learning/`; schema fix commit `af2bd7f`.
+**Remaining Gate**: Apply `supabase/schema.sql` and enable anonymous sign-ins in the Supabase dashboard before treating cloud data writes as ready.
+
+---
+
 ## GitHub Repository Published
 **Timestamp**: 2026-08-28T00:00:00Z
 **User Input**: "create it for me. I will give the neessary permission to you, when you ask. you the web thing"
