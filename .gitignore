@@ -1,0 +1,19 @@
+# Local development
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json
+
+# Secrets and local state
+.env
+.env.*
+*.local
+
+# Test and build output
+coverage/
+dist/
+node_modules/
+
+# Browser exports and temporary files
+*.har
+*.log
