@@ -48,6 +48,8 @@ Current dynamic-data status: profile domains are cloud-driven; mastery signals a
 
 Reset status: no demo learner records or fabricated dashboard metrics remain in the repository. Supabase account data is user-owned cloud data and is not deleted by source cleanup.
 
+Cache note: Supabase Auth may keep a session token in browser site storage for reload continuity. That is not learner data. Clearing it signs out the browser; it does not delete the cloud account or profile.
+
 ## Next step
 
 Show the prototype to several family members. Record which screens they understand, what they expect to happen next, and whether they would use it for their own subject. Convert the strongest observations into requirements before building the real learning engine.

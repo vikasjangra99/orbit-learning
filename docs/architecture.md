@@ -22,6 +22,10 @@ The application is cloud-first. The browser is a presentation and API-client sur
 
 The persistence bridge uses the authenticated Supabase user ID. There is no local database fallback in the cloud application.
 
+## Browser Session Cache
+
+Supabase's browser client stores the authenticated session token in browser site storage so a reload can restore login. This token is authentication state, not learner data. Clearing site data signs the browser out; it does not delete the cloud profile or attempts. Learner records remain in Supabase Postgres.
+
 ## Future Boundaries
 
 Cloud authentication and storage are active. Threat modeling, data classification, deletion, backup, IAM, encryption, cost, and regional data requirements remain production gates.

@@ -49,6 +49,10 @@
 11. No service-role key or Google secret appears in source, artifact, logs, or browser code.
 12. Password reset completes through a valid Pages redirect.
 
+## Reset semantics
+
+The repository contains no seeded learner names or fabricated progress values. Clearing browser site data removes the local Supabase session token and signs out the current browser; it does not delete cloud rows. Deleting cloud data must be an authenticated, explicit account-data operation and must not be performed as a generic cache reset.
+
 ## Current blocker
 
 The code and deployment are prepared, but provider toggles, SQL execution, and Google credentials are account-side operations. They must be completed and verified before calling the application production ready.

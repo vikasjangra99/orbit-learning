@@ -4,15 +4,15 @@ A cloud-first foundation for the adaptive personal learning system. It keeps the
 
 ## Run
 
-Open `index.html` in a browser. No installation or server is required.
+Use the published application: https://vikasjangra99.github.io/orbit-learning/
 
 ## Prototype flows
 
-- Switch between three learner profiles.
-- Experience the first-use welcome page and four-step setup flow.
-- Enter a name, choose multiple domains, choose a learning intention, and enter a personalized space.
+- Create an account or sign in with Google.
+- Experience the first-use welcome page and four-step setup flow after authentication.
+- Enter a name, choose multiple domains, choose a learning intention, and save them to the cloud profile.
 - Explore Today, Learn, Progress, and Profile views.
-- Start a mock mathematics practice session.
+- Start the available practice activity.
 - Answer questions, request a hint, and see feedback.
 - Resize the browser or use the mobile menu to inspect the responsive layout.
 
